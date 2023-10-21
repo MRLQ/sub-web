@@ -695,8 +695,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "",
-        remoteConfig: "",
+        customBackend: this.getUrlParam() == "" ? "http://localhost:25500" : this.getUrlParam(),
+        remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
